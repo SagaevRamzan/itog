@@ -87,14 +87,14 @@ function App(){
          return item
     }
 
-  return (<>
+  return (
 
     <div className="app">
         <Header/>
         <Content />
 
     </div>
-      </>
+
   )
 }
 
