@@ -79,7 +79,7 @@ function App(){
     //         image: "http://intocode.ru/d/react-project-1/images/9.jpg"
     //     }
     // ]
-    //
+
     //   let [new_database,setNew_database]=useState(database.map(test))
     // // let new_database=database.map(test)
     // //

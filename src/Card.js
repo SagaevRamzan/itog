@@ -2,8 +2,7 @@ import Button from "./Button";
 import Content from "./Content";
 function Card(props) {
 
-    return (
-        <div className="card">
+    return (        <div className="card">
 
             <div className="card-image">
                 <img src={props.image} alt=""/>

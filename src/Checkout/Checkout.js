@@ -8,7 +8,7 @@ function Checkout(props) {
         <>
 
 
-            <div className="сheckout" >
+            <div className="checkout" >
 
                 <a href="#"><img  src={logo} /></a>
                 <span className="counter">0</span>
