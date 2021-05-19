@@ -3,12 +3,12 @@ import Menu from "./Menu.js";
 import Checkout from "./Checkout/Checkout.js";
 
 
-function Header() {
+function Header(props) {
     return (
         <div className="header">
             <Logo/>
             <Menu/>
-            <Checkout/>
+            <Checkout base={props.arr} boug={props.setbought}/>
         </div>
     );
 }

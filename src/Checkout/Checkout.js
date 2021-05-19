@@ -2,6 +2,14 @@ import logo from "./shopping-cart-solid.svg"
 
 
 function Checkout(props) {
+const counter=0;
+    let id=props.boug
+props.base.filter(()=>{
+    if(props.base.bought==true)
+    return (counter+1)
+});
+
+
 
     return (
 
@@ -11,7 +19,7 @@ function Checkout(props) {
             <div className="checkout" >
 
                 <a href="#"><img  src={logo} /></a>
-                <span className="counter">0</span>
+                <span className="counter">{counter}</span>
             </div>
 
             <a href="#" className="logout">
