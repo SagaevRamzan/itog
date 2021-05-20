@@ -10,7 +10,7 @@ function Card(props) {
             <div className="card-info">
                 <div className="card-name">{props.name}</div>
                 <div className="card-price">{props.price} ₽</div>
-                <Button  arr={props.arr} bought_1={props.boug}/>
+                <Button  arr={props.arr} bought_1={props.boug} setBought={props.setBought} buton={props.buton}/>
             </div>
         </div>
     )

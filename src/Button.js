@@ -1,11 +1,15 @@
 import Card from "./Card";
 
 function Button(props) {
-   // props.sos(props.arr)
-    let x=props.bought_1
+
+    // function clik(item){
+    //     props.arr.setD(props.arr[item])
+    // }
     return (
         <div className="card-button">
-            <button className="btn" onClick={x}>Добавить в корзину</button>
+            <button className="btn" onClick={props.setBought}>
+                 "Добавить в корзину"
+            </button>
         </div>
     )
 }

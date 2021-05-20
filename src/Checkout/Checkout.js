@@ -2,31 +2,33 @@ import logo from "./shopping-cart-solid.svg"
 
 
 function Checkout(props) {
-const counter=0;
-    let id=props.boug
-props.base.filter(()=>{
-    if(props.base.bought==true)
-    return (counter+1)
-});
+
+    // function setcount(props) {
+    //
+    //   const counter = props.arr.filter((item) => {
+    //        if( item.bought === true)
+    //
+    //            return item
+    //     })
+    //
+    //     return counter.length
+    // }
+        return (
+
+            <>
 
 
+                <div className="checkout">
 
-    return (
+                    <a href="#"><img src={logo}/></a>
+                    <span className="counter">{props.new_database.length}</span>
+                </div>
 
-        <>
+                <a href="#" className="logout">
+                    выход
+                </a>
+            </>
+        )
 
-
-            <div className="checkout" >
-
-                <a href="#"><img  src={logo} /></a>
-                <span className="counter">{counter}</span>
-            </div>
-
-            <a href="#" className="logout">
-                выход
-            </a>
-        </>
-    )
 }
-
 export default Checkout;

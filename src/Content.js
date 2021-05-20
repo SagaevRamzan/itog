@@ -13,7 +13,7 @@ function Content(props) {
      props.arr.map((item)=>{
 
      return (<Card image={item.image} name={item.name} price={item.price} arr={props.arr}
-                   boug={props.setBought}
+                   setBought={props.setBought}
      />);
      })
  }
