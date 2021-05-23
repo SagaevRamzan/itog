@@ -78,34 +78,34 @@ function App(){
             image: "http://intocode.ru/d/react-project-1/images/9.jpg"
         }])
 
-    const new_database=database.filter((index)=> {
-            alert(1)
-        if (index.bought === true) {
-            alert(2)
-
-            return index
-        }
-
-    })
-
+        // const new_database=database.map(test)
+        //  function test(item,ii){
+        //return item[ii]
+        // }
 
 
     function setBought(id){
+       
+       const  newArr=database.map((data,index)=>{
+           if(index+1===id){
+               return {...data,bought:!data.bought}
+           }
+           else {
+               return data
+           }
 
-        setDatabase(database)
+       })
+
+            setDatabase(newArr)
 
     }
-
-
-
-
 
 
   return (
 
     <div className="app">
-        <Header arr={database} setBought={setBought} new_database={new_database}/>
-        <Content arr={database}  setBought={setBought}/>
+        <Header database={database} />
+        <Content database={database}  setBought={setBought}/>
 
     </div>
 

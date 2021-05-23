@@ -8,7 +8,7 @@ function Header(props) {
         <div className="header">
             <Logo/>
             <Menu/>
-            <Checkout arr={props.arr} setBought={props.setBought} new_database={props.new_database}/>
+            <Checkout database={props.database} setBought={props.setBought} />
         </div>
     );
 }
